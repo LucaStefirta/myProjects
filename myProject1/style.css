@@ -1,0 +1,214 @@
+*{
+    background-color: rgb(2, 2, 2);
+}
+header img {
+    width: 300px;
+    height: 300px;
+    margin-left: 41%;
+    margin-right : 41%;
+  
+    
+}
+header h4{
+    color: #15ABD4;
+    font-family:fantasy ;
+   text-align: center;
+margin-bottom: 0px;
+}
+header input{
+    width: 90%;
+    height: 30px;
+    border: 2px solid #9E32FF;
+    border-radius: 2%;
+    margin-left: 5%;
+    
+}
+.interfacebtn{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
+.interfacebtn img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flexcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+
+    margin-top: 50px;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+    grid-template-rows: repeat(3, minmax(300px,1fr));
+   grid-template-areas: 
+   "news messages friends"
+   "music video notes"
+   "stream clips games";
+   grid-gap: 5px;
+}
+.items{
+    color: #15ABD4;
+    border:  solid 2px;
+    box-shadow: 3px;
+    
+    
+}
+.items h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.items img{
+    height: 300px;
+    width: 300px;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 50px;
+   text-align: center;
+   
+}
+.items:hover{
+    transform: scale(1.2);
+}
+
+.Notification{
+    grid-area: notes;
+}
+.Messages{
+    grid-area: messages;
+}
+.Friends{
+    grid-area: friends;
+}
+.Music{
+    grid-area: music;
+
+}
+.Streams{
+    grid-area: stream;
+}
+.Video{
+    grid-area: video;
+}
+.Clips{
+    grid-area: clips;
+
+}
+.Games{
+    grid-area: games;
+}
+.News{
+    grid-area: news;
+}
+
+hr{
+   
+   background-color: #15ABD4;
+}
+
+footer{
+    width: minmax(500px, 1fr);
+    height: 200px;
+    color: #15ABD4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer img{
+    height: 50px;
+    width: 50px;
+}
+footer table{
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+footer table img a:hover{
+    transform: scale(1.1);
+}
+.linksfooter a{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #DB5C8B;
+}
+.linksfooter a:hover{
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width:1300px)and (min-width:901px){
+    .container{
+        display: grid;
+ 
+    margin-top: 50px;
+    grid-template-columns: repeat(2,minmax(300px,1fr));
+    grid-template-rows: repeat(2, minmax(300px,1fr));
+   grid-template-areas: 
+   "news messages "
+   " friends music "
+   "video notes"
+   "stream clips "
+   "games games";
+   grid-gap: 5px;
+
+    }
+    
+    .Games img{
+        margin-left: 37%;
+        margin-right: 37%;
+
+    }
+}
+
+    @media screen and (max-width:900px) {
+        .container{
+            display: grid;
+     
+        margin-top: 50px;
+        grid-template-columns: repeat(1,minmax(90px,100px));
+        grid-template-rows: repeat(1, minmax(130px,150px));
+       grid-template-areas: 
+       "news messages friends notes video music clips stream games"
+       ;
+       grid-gap: 5px;
+    
+        }
+        .items img{
+            height:50px;
+            width: 50px;
+        }
+        .Notification img{
+            margin-left: 23%;
+
+        }
+        .Games img{
+            margin-left: 19%;
+        }
+        .items h1{
+            font-size: small;
+        }
+
+        .dragpart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #15ABD4;
+            text-align: center;
+            margin-top: 70px;
+            height: 900px;
+            width: minmax(500px,850px);
+            border:dashed #9E32FF 5px;
+            border-radius: 5%;
+
+        }
+        .Streams img{
+            margin-left: 26%;
+        }
+    }
